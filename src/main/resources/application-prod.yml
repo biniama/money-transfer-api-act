@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    # you are expected this three lines with host, DB name, username and password
+    url: jdbc:postgresql://ec2-54-155-226-153.eu-west-1.compute.amazonaws.com:5432/df5hs0lougars5
+    username: umnqwhhejgagmj
+    password: c2167e7a8a631006d7904a797bcee2b8b3fb4cd3ba01c9579feb8740bdafa09a
+  jpa.database-platform: org.hibernate.dialect.PostgreSQLDialect
+  jpa.show-sql: true
+  jpa.hibernate.ddl-auto: update
+  # The SQL dialect makes Hibernate generate better SQL for the chosen database
+  jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect

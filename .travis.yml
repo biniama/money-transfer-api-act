@@ -6,6 +6,9 @@ script:
 branches:
   only:
     - main
+cache:
+  directories:
+  - $HOME/.m2
 deploy:
   provider: heroku
   api_key: $HEROKU_APP_KEY
