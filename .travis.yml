@@ -1,0 +1,15 @@
+language: java
+jdk:
+- openjdk11
+script:
+- "./mvnw clean verify"
+branches:
+  only:
+    - main
+deploy:
+  provider: heroku
+  api_key: $HEROKU_APP_KEY
+  app: money-transfer-api-act
+  on:
+    repo: biniama/money-transfer-api-act
+    branch: main

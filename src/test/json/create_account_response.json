@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "firstName": "Biniam",
+  "lastName": "Asnake",
+  "phoneNumber": "+251 966-272502",
+  "email": "biniamasnake@gmail.com",
+  "pin": 1234,
+  "isVerified": true,
+  "balance": 0.0
+}
