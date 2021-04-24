@@ -1,0 +1,18 @@
+#This is how we write in application.properties
+#spring.datasource.driver-class-name= x
+#spring.datasource.url = x
+#spring.datasource.username = x
+#spring.datasource.passowrd = x
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    # you are expected this three lines with host, DB name, username and password
+    url: jdbc:postgresql://localhost:5432/moneytransferapiact
+    username: moneytransferapiactuser
+    password: 2didqGzlD6u/G1gf
+  jpa.database-platform: org.hibernate.dialect.PostgreSQLDialect
+  jpa.show-sql: true
+  jpa.hibernate.ddl-auto: update
+  # The SQL dialect makes Hibernate generate better SQL for the chosen database
+  jpa.properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
